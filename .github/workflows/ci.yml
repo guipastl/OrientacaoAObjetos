@@ -1,0 +1,24 @@
+name: Paradigmas - Orientação a Objetos e Funcional 🧪
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Paradigma de Orientação a Objetos
+        uses: actions/setup-node@v4
+        with:
+          node-version: '19.x'
+      - run: node oo.js
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Paradigma Funcional
+        uses: actions/setup-node@v4
+        with:
+          node-version: '19.x'
+      - run: node functional.js
