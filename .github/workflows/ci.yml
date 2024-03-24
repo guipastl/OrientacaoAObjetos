@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: pacotes
+      - run: rm -rf node_modules
+      - run: npm install -g npm@latest
+      - run: npm i core-util-is
       - uses: actions/checkout@v4
       - name: Paradigma de Orientação a Objetos
         uses: actions/setup-node@v4
