@@ -15,7 +15,6 @@ jobs:
           node-version: '19.x'
       - run: node oo.js
 
-    steps:
       - uses: actions/checkout@v4
       - name: Paradigma Funcional
         uses: actions/setup-node@v4
